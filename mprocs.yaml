@@ -1,0 +1,7 @@
+procs:
+  "Dev Server":
+    shell: "pnpm dev"
+
+  "Check Linting":
+    shell: "pnpm lint"
+    autostart: false

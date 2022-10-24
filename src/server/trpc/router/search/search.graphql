@@ -1,0 +1,35 @@
+query search($lol: String!) {
+  ContentItems(where: { _search: $lol }) {
+    items {
+      __typename
+      ... on Home {
+        title
+        _id
+      }
+      ... on Content {
+        title
+        _id
+      }
+      ... on Tool {
+        title
+        _id
+      }
+      ... on Filter {
+        title
+        _id
+      }
+      ... on Category {
+        title
+        _id
+      }
+      ... on Phase {
+        title
+        _id
+      }
+      ... on Filter {
+        title
+        _id
+      }
+    }
+  }
+}
